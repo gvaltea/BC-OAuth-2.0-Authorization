@@ -1,4 +1,4 @@
-page 50102 "OAuth 2.0 Consent Dialog"
+page 80102 "OAuth 2.0 Consent Dialog"
 {
     Extensible = false;
     Caption = 'Waiting for a response - do not close this page';

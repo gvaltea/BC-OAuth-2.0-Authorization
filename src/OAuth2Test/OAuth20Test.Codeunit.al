@@ -1,4 +1,4 @@
-codeunit 50110 "OAuth 2.0 Test"
+codeunit 80110 "OAuth 2.0 Test"
 {
     local procedure GetGoogleAccessToken()
     var

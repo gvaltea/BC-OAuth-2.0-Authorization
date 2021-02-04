@@ -1,4 +1,4 @@
-codeunit 50100 "OAuth 2.0 Authorization"
+codeunit 80100 "OAuth 2.0 Authorization"
 {
     var
         DotNetUriBuilder: Codeunit DotNet_Uri;

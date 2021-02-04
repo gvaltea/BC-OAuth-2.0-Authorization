@@ -1,4 +1,4 @@
-page 50100 "OAuth 2.0 Applications"
+page 80100 "OAuth 2.0 Applications"
 {
     ApplicationArea = Basic, Suite, Service;
     Caption = 'OAuth 2.0 Applications';

@@ -1,4 +1,4 @@
-page 50101 "OAuth 2.0 Application"
+page 80101 "OAuth 2.0 Application"
 {
     Caption = 'OAuth 2.0 Application';
     LinksAllowed = false;

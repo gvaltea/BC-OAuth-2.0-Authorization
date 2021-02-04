@@ -1,4 +1,4 @@
-table 50100 "OAuth 2.0 Application"
+table 80100 "OAuth 2.0 Application"
 {
     Caption = 'OAuth 2.0 Application';
     DrillDownPageId = "OAuth 2.0 Applications";
@@ -104,7 +104,7 @@ table 50100 "OAuth 2.0 Application"
         {
             Caption = 'User Name';
         }
-        field(18; Password; Text[20])
+        field(18; Password; Text[50])
         {
             Caption = 'Password';
         }

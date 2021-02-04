@@ -1,4 +1,4 @@
-codeunit 50101 "OAuth 2.0 App. Helper"
+codeunit 80101 "OAuth 2.0 App. Helper"
 {
     var
         OAuth2Authorization: Codeunit "OAuth 2.0 Authorization";
@@ -147,8 +147,8 @@ codeunit 50101 "OAuth 2.0 App. Helper"
                         Application."Refresh Token".CreateOutStream(OStream, TextEncoding::UTF8);
                         OStream.WriteText(JToken.AsValue().AsText());
                     end;
-                else
-                    Error('Invalid Access Token Property %1, Value:  %2', Property, JToken.AsValue().AsText());
+            // else
+            //     Error('Invalid Access Token Property %1, Value:  %2', Property, JToken.AsValue().AsText());
             end;
         end;
     end;

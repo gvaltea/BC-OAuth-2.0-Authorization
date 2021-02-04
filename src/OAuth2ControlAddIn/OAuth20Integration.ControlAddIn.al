@@ -1,6 +1,6 @@
 controladdin "OAuth 2.0 Integration"
 {
-    Scripts = 'src\OAuth2ControlAddIn\js\OAuthIntegration.js';
+    Scripts = '.\src\OAuth2ControlAddIn\js\OAuthIntegration.js';
     RequestedWidth = 0;
     RequestedHeight = 0;
     HorizontalStretch = false;

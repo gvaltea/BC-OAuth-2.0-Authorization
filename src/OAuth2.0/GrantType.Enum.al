@@ -1,4 +1,4 @@
-enum 50100 "Auth. Grant Type"
+enum 80100 "Auth. Grant Type"
 {
     value(0; "Authorization Code")
     {
