@@ -130,6 +130,8 @@ page 80101 "OAuth 2.0 Application"
                 var
                     MessageText: Text;
                 begin
+
+
                     if OAuth20AppHelper.GetRefreshToken(Rec) = '' then
                         Error(NoRefreshTokenErr);
 
