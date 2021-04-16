@@ -131,17 +131,24 @@ codeunit 80100 "OAuth 2.0 Authorization"
         Request.SetRequestUri(TokenEndpointURL);
         Request.Content(Content);
 
-        if Client.Send(Request, Response) then
+        if TrySend(Client, Request, Response) then begin
             if Response.IsSuccessStatusCode() then begin
                 if Response.Content.ReadAs(ResponseText) then
                     IsSuccess := JAccessToken.ReadFrom(ResponseText);
             end else
                 if Response.Content.ReadAs(ResponseText) then
                     JAccessToken.ReadFrom(ResponseText);
-
+        end else
+            Message(GetLastErrorText());
         exit(IsSuccess);
     end;
 
+
+    [TryFunction]
+    local procedure TrySend(Client: HttpClient; Request: HttpRequestMessage; Response: HttpResponseMessage)
+    begin
+        Client.Send(Request, Response)
+    end;
 
     procedure AcquireTokenByRefreshToken(
         TokenEndpointURL: Text;
